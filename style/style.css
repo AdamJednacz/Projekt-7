@@ -1,0 +1,50 @@
+@import "_mixins.scss";
+
+.switch {
+    display: flex;
+    align-items: center;
+    width: 30em;
+    height: 10em;
+    background-color: #000000;
+    position: relative;
+    border-radius: 6em;
+    cursor: pointer;
+    animation: switchBackground 5s infinite alternate;
+}
+
+.slider {
+    width: 8em;
+    height: 8em;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    transition: transform 0.5s ease-in-out;
+}
+
+.switch.on .slider {
+    transform: translateX(20em);
+}
+
+
+.background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 33vh;
+}
+
+.nr1{
+    background-color: red;
+    height: 33vh;
+}
+.nr2{
+    background-color: blue;
+    height: 33vh;
+}
+
+.nr3{
+    background-color:yellow;
+    height: 34vh;
+}
